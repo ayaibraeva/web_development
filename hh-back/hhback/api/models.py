@@ -29,6 +29,6 @@ class Vacancy(models.Model):
             'name': self.name,
             'description': self.description,
             'salary': self.salary,
-            'company_id': self.company_id
+            'company_id': self.company_id.to_json()
 
         }
